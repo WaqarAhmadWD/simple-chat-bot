@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="w-full h-full dark:bg-slate-900 bg-slate-300 flex justify-center p-5">
+      <div class="fixed bottom-4 md:w-1/2">
+      <form id="search_form">
+      <div class="flex w-full justify-center items-center gap-2">
+        <div class="md:w-[85%]">
+          <input type="text" id="search_input" placeholder="Ask anything" class="bg-gray-50  border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+        <button id="search_button" type="submit" class="relative cursor-pointer inline-flex items-center justify-center p-0.5  overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+          <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+            Submit
+          </span>
+        </button>
+      </div>
+    </form>
+    </div>
+    <div id="display" class="md:w-1/2 h-full">
+      <div class="w-full flex justify-start">
+    
+    </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
