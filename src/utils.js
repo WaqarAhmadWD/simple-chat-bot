@@ -109,3 +109,14 @@ export const loader = () =>{
 </div>
 `
 }
+export const points = (result) =>{
+  try {
+    const rawText = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+    const jsonMatch = rawText.match(/```json\n([\s\S]*?)\n```/);
+    const parsed = JSON.parse(jsonMatch[1]);
+    const points = parsed.map(p => p.point);
+    return points;
+  } catch (err) {
+    return null;
+  }
+}
